@@ -20,3 +20,27 @@ Output: 1
 
 Input: nums = [5,4,-1,7,8]<br/>
 Output: 23
+
+
+##Solution
+(`
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int n = nums.length; //length of array
+        int max = Integer.MIN_VALUE, sum = 0;//initial condition
+        
+        for(int i=0;i<n;i++){
+            // addiding each element
+            sum = sum + nums[i];
+            // finding max element
+            max = Math.max(sum,max);
+            // condition
+            if(sum<0){
+                sum = 0;
+            }
+        }
+        
+        return max;
+    }
+}
+)
