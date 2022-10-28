@@ -23,8 +23,8 @@ Output: 23
 
 
 ##Solution<br/>
-(`
 
+```
 class Solution {
     public int maxSubArray(int[] nums) {
         int n = nums.length; //length of array
@@ -44,4 +44,4 @@ class Solution {
         return max;
     }
 }
-)
+```
